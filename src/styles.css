@@ -1,0 +1,70 @@
+html,
+input,
+button,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+    background: #f1f2f6;
+    min-height: 100vh;
+}
+
+button {
+    padding: 24px;
+    background-color: #fff;
+    border: 4px solid lightsalmon;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: xx-large;
+}
+
+button:hover {
+    background-color: lightsalmon;
+}
+
+button:active {
+    background-color: salmon;
+    border-color: salmon;
+}
+
+img {
+    min-width: 300px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 20px;
+}
+
+.container > * {
+   min-width: 0;
+   min-height: 0;
+}
+
+.container img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    
+    .container img {
+        
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
